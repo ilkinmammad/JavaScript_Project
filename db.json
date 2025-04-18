@@ -1,0 +1,64 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "title": "Shoulder Bag Leather Bag",
+        "description": "Leather undertakes laborious physical work",
+        "price": 130,
+        "oldPrice": 340,
+        "image": "./assets/images/card1.png",
+        "badge": "NEW",
+        "rating": 5
+      },
+      {
+        "id": 2,
+        "title": "Tote Bag Classic Style",
+        "description": "Stylish and practical for every day",
+        "price": 95,
+        "oldPrice": 200,
+        "image": "./assets/images/card2.png",
+        "badge": "30%",
+        "rating": 4
+      },
+      {
+        "id": 3,
+        "title": "Elegant Evening Purse",
+        "description": "Perfect for evening and formal events",
+        "price": 150,
+        "oldPrice": 290,
+        "image": "./assets/images/card3.png",
+        "badge": "30%",
+        "rating": 5
+      },
+      {
+        "id": 4,
+        "title": "Mini Backpack",
+        "description": "Compact and casual for quick trips",
+        "price": 80,
+        "oldPrice": 180,
+        "image": "./assets/images/card4.png",
+        "badge": "NEW",
+        "rating": 4
+      },
+      {
+        "id": 5,
+        "title": "Mini Backpack",
+        "description": "Shoulder Bag Leather Bag Leather undertakes laborious physical physical",
+        "price": 130,
+        "oldPrice": 340,
+        "image": "./assets/images/card5.png",
+        "badge": "30%",
+        "rating": 4
+      },
+      {
+        "id": 6,
+        "title": "Mini Backpack",
+        "description": "Shoulder Bag Leather Bag Leather undertakes laborious physical physical",
+        "price": 130,
+        "oldPrice": 340,
+        "image": "./assets/images/card6.png",
+        
+        "rating": 4
+      }
+    ]
+  }

@@ -8,6 +8,8 @@ body {
     align-items: center;
     justify-content: space-between;
     padding:50px;
+    max-width: 1300px;
+    margin: 0 auto;
     border-bottom: 1px solid #ccc;
     
   }
@@ -26,7 +28,6 @@ body {
   .search-box input {
     width: 100%;
     padding: 10px 40px 10px 15px;
-    border: 2px solid #9e77d1;
     border-radius: 5px;
   }
 
@@ -68,7 +69,6 @@ body {
     justify-content: space-between;
     padding: 50px;
     font-family: Arial, sans-serif;
-    background-color:#FFE2E0;
   }
   
   .text-content {
@@ -100,6 +100,10 @@ body {
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 30px;
+  }
+  .handbag{
+    background-color:#FFE2E0;
+
   }
   
   .shop-button {
@@ -144,92 +148,223 @@ body {
     margin-bottom: 30px;
   }
   
-  .product-grid {
+  .cards {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 30px;
   }
-  
-  .product-card {
-    background: #fff;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  .card {
+    width: 300px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    font-family: sans-serif;
     position: relative;
-    transition: transform 0.3s ease;
   }
-  
-  .product-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .badge-new, .badge-discount {
+
+  .badge {
     position: absolute;
-    top: 15px;
-    left: 15px;
-    padding: 5px 10px;
-    border-radius: 4px;
-    font-weight: bold;
-    font-size: 14px;
-  }
-  
-  .badge-new {
-    background-color: #9e77d1;
+    top: 10px;
+    left: 10px;
+    background: #ff4d4f;
     color: white;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 12px;
   }
-  
-  .badge-discount {
-    background-color: #ff4d4f;
-    color: white;
-  }
-  
-  .product-info {
-    padding: 20px;
-  }
-  
-  .product-info h3 {
+
+  .heart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: red;
     font-size: 18px;
-    margin: 10px 0;
-    color: #333;
-  }
-  
-  .product-info p {
-    color: #666;
-    font-size: 14px;
-    margin-bottom: 15px;
-    line-height: 1.4;
-  }
-  
-  .price {
-    margin: 15px 0;
-  }
-  
-  .current-price {
-    font-size: 20px;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .original-price {
-    font-size: 14px;
-    color: #999;
-    text-decoration: line-through;
-    margin-left: 10px;
-  }
-  
-  .add-to-cart {
-    width: 100%;
-    padding: 12px;
-    background-color: #9e77d1;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s;
   }
-  
-  .add-to-cart:hover {
-    background-color: #8a65c0;
+
+  .product-img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    object-fit: cover;
   }
+
+  .stars {
+    color: #faca51;
+    margin: 10px 0;
+  }
+
+  .title {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .price {
+    color: #e53935;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .old-price {
+    color: #999;
+    font-size: 14px;
+    margin-left: 8px;
+    text-decoration: line-through;
+  }
+
+  .btnadd {
+    display: block;
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+    border: 2px solid #2d2b2b;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+  }
+
+  /* footer  */
   
+  .footer {
+    background: #f9f9fb;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-top: 1px solid #eee;
+  }
+
+  .footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 20px 0;
+  }
+
+  .footer h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .footer p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+  }
+
+  .footer a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    margin: 5px 0;
+    font-size: 14px;
+  }
+
+  .footer a:hover {
+    text-decoration: underline;
+  }
+
+  .contact-info {
+    margin-top: 15px;
+  }
+
+  .contact-info div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #333;
+  }
+
+  .contact-info span {
+    margin-left: 8px;
+  }
+
+  .send-btn {
+    margin-top: 15px;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    background: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+  }
+
+  .send-btn:hover {
+    background: #f0f0f0;
+  }
+
+  .footer-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+
+  /* responsivlik */
+
+@media (max-width: 768px) {
+  .header, .icons, .search-box, .container, .cards, .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .search-box {
+    width: 90%;
+    margin-top: 10px;
+  }
+
+  .icons span {
+    margin: 5px 0;
+    display: block;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .image-section img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    display: flex;
+    
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
