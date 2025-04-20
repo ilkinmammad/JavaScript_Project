@@ -8,7 +8,9 @@
         "oldPrice": 340,
         "image": "./assets/images/card1.png",
         "badge": "NEW",
-        "rating": 5
+        "rating": 5,
+        "stars":"★★★★★"
+
       },
       {
         "id": 2,
@@ -18,7 +20,9 @@
         "oldPrice": 200,
         "image": "./assets/images/card2.png",
         "badge": "30%",
-        "rating": 4
+        "rating": 4,
+        "stars":"★★★★★"
+
       },
       {
         "id": 3,
@@ -28,7 +32,9 @@
         "oldPrice": 290,
         "image": "./assets/images/card3.png",
         "badge": "30%",
-        "rating": 5
+        "rating": 5 ,
+        "stars":"★★★★★"
+
       },
       {
         "id": 4,
@@ -38,7 +44,9 @@
         "oldPrice": 180,
         "image": "./assets/images/card4.png",
         "badge": "NEW",
-        "rating": 4
+        "rating": 4 ,
+        "stars":"★★★★★"
+
       },
       {
         "id": 5,
@@ -48,7 +56,8 @@
         "oldPrice": 340,
         "image": "./assets/images/card5.png",
         "badge": "30%",
-        "rating": 4
+        "rating": 4,
+        "stars":"★★★★★"
       },
       {
         "id": 6,
@@ -57,8 +66,10 @@
         "price": 130,
         "oldPrice": 340,
         "image": "./assets/images/card6.png",
-        
-        "rating": 4
+        "badge":"",
+        "rating": 4,
+        "stars":"★★★★★"
+
       }
     ]
   }
