@@ -14,6 +14,22 @@ form.addEventListener("submit",(e) => {
     toasts("Xanalar boş qala bilməz!");
     return;
   }
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    toasts("Zəhmət olmasa düzgün e-poçt daxil edin.");
+    return;
+  }
+
+  if (username.length < 6) {
+    toasts("İstifadəçi adi ən azi 6 simvol olmaldir.");
+    return;
+  }
+
+  const passwordRegex = /^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*]).{6,}$/;
+  if (!passwordRegex.test(password)) {
+    toasts("Şifrə ən azi 1 böyük hərf, 1 rəqəm və 1 simvol ibaret olmalidir.");
+    return;
+  }
   
   const user = { name, username, email, password , isLoggedIn: true ,wishlist:[] ,basket:[]};
   localStorage.setItem("user", JSON.stringify(user));
