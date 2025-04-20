@@ -193,3 +193,8 @@ let wishlist = document.querySelector(".wishlist");
 wishlist.addEventListener("click", () => {
     window.location.href = "favories.html"; 
 });
+
+let basket = document.querySelector(".basket");
+basket.addEventListener("click", () => {
+    window.location.href = "basket.html"; 
+});
