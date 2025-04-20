@@ -39,9 +39,6 @@ form.addEventListener("submit",(e) => {
     window.location.href = "login.html";
   }, 1500);
 
-
-
-
 })
 
 

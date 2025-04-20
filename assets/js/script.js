@@ -76,7 +76,7 @@ async function addCards() {
                 user.basket.push(product);
             }
             localStorage.setItem("user", JSON.stringify(user));
-            window.location.href = "basket.html";
+            toasts("Mehsul baskete elave olundu")
         });
         
 
