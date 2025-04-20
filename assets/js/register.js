@@ -15,13 +15,15 @@ form.addEventListener("submit",(e) => {
     return;
   }
   
-  const user = { name, username, email, password };
+  const user = { name, username, email, password , isLoggedIn: true  };
   localStorage.setItem("user", JSON.stringify(user));
-  localStorage.setItem("isLoggedIn", "true");
+
   toasts("Qeydiyyat uğurla tamamlandi!");
   setTimeout(() => {
     window.location.href = "login.html";
   }, 1500);
+
+
 
 
 })

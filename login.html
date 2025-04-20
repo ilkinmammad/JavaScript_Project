@@ -1,16 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="az">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/login.css">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <link rel="stylesheet" href="./assets/css/login.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"/>
 </head>
 <body>
-    
 
+  <div class="container">
+    <h1>Login</h1>
+    <p class="description">
+      Nor again is there anyone who to enjoy a pleasure that<br>
+      or pursues or desires to obtain
+    </p>
 
+    <form class="form">
+      <label for="username">Username</label>
+      <input type="text" class="username" placeholder="İstifadəçi adinizi daxil edin"/>
 
-    <script src="./assets/js/login.js"></script>
+      <label for="password">Password <span class="forgot">Forgot your password?</span></label>
+      <input type="password" class="password" placeholder="Şifrənizi daxil edin"/>
+
+      <button type="submit" class="btnLogin">Login</button>
+    </form>
+
+    <p class="register-text">
+      Don't have an account yet? <a href="register.html"><strong>Create now</strong></a>
+    </p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="./assets/js/login.js"></script>
 </body>
 </html>
