@@ -87,6 +87,7 @@ function removeProductFromBasket(id) {
   }
 
   let homePage = document.querySelector(".logo")
+  homePage.style.cursor="pointer"
 homePage.addEventListener("click" , () => {
     window.location.href="index.html"
 })
