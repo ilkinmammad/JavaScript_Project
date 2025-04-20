@@ -1,11 +1,14 @@
 let products = [];
 let BASE_URL = "http://localhost:3000/products";
 
+
 async function addCards() {
     let res = await axios(BASE_URL);
     products = res.data;
 
     let cards = document.querySelector(".cards");
+
+    let basketIconCount = document.querySelector(".basketicon-count"); 
 
     products.forEach(product => {
         let card = document.createElement("div");
@@ -74,6 +77,7 @@ async function addCards() {
             const alreadyInBasket = user.basket.find(item => item.id === product.id);
             if (!alreadyInBasket) {
                 user.basket.push(product);
+                basketIconCount.textContent = user.basket.length;
             }
             localStorage.setItem("user", JSON.stringify(user));
             toasts("Mehsul baskete elave olundu")
@@ -198,3 +202,16 @@ let basket = document.querySelector(".basket");
 basket.addEventListener("click", () => {
     window.location.href = "basket.html"; 
 });
+function toasts(msg) {
+    let t = document.createElement("div");
+    t.textContent = msg;
+    Object.assign(t.style, {
+      position: "fixed", bottom: "20px", right: "20px",
+      background: "#333", color: "#fff", padding: "8px 12px",
+      borderRadius: "4px", zIndex: 9999
+    });
+    document.body.append(t);
+    setTimeout(() => t.remove(), 2000);
+  }
+  
+
