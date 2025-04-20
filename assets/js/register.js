@@ -15,7 +15,7 @@ form.addEventListener("submit",(e) => {
     return;
   }
   
-  const user = { name, username, email, password , isLoggedIn: true  };
+  const user = { name, username, email, password , isLoggedIn: true ,wishlist:[] ,basket:[]};
   localStorage.setItem("user", JSON.stringify(user));
 
   toasts("Qeydiyyat uğurla tamamlandi!");
